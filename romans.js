@@ -13,12 +13,12 @@ function init() {
   var inputArea = document.querySelector('input[type=\'text\']');
 
 
-  modeCheckbox.addEventListener('change', function(e) 
+  modeCheckbox.addEventListener('change', function(e) {
     header.innerHTML = getModeTitle(e.target.checked);
-  })
+  });
 
   const getModeTitle = function(integerToRoman) {
-    return integerToRoman ? 'Integer To Roman' : 'Roman To Integer;
+    return integerToRoman ? 'Integer To Roman' : 'Roman To Integer';
   };
 
   // Now, the convertion operation does only perform the operation. 
