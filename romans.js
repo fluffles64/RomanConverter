@@ -7,6 +7,10 @@ function init() {
   
   // Load elements once to avoid repetition on every invocation
   var modeCheckbox = document.querySelector('input[type=\'checkbox\']');
+  var header = document.querySelector('h1');
+  var convertButton = document.querySelector('.convert-button');
+  var outputArea = document.querySelector('.convert-output');
+  var inputArea = document.querySelector('input[type=\'text\']');
 
 
   modeCheckbox.addEventListener('change', function(e) {
