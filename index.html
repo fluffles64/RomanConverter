@@ -1,6 +1,6 @@
 <html>
   <head>
-        <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-V08BD1YPF7"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -11,6 +11,18 @@
     </script>
     <script src="romans.js"></script>
     <link rel="stylesheet" href="romans.css">
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const convertButton = document.querySelector('.convert-button');
+
+        convertButton.addEventListener('click', function() {
+          gtag('event', 'button_click', {
+            'event_category': 'Conversion',
+            'event_label': 'Convert Button'
+          });
+        });
+      });
+    </script>
   </head>
   <body onload="init()">
     <main class="container">
@@ -29,3 +41,4 @@
     </main>
   </body>
 </html>
+
